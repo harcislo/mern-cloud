@@ -1,0 +1,133 @@
+.file {
+    display: grid;
+    grid-template-columns: 1fr 4fr repeat(4, 1fr);
+    color: rgb(154, 160, 166);
+    box-shadow: 0px 1px 3px 0px #000000;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+
+.file_img {
+    max-width: 40px;
+    justify-self: center;
+    align-self: center;
+    margin: 0 5px;
+}
+
+.file_name {
+    align-self: center;
+    margin: 0 5px;
+
+}
+
+.file_date {
+    grid-column-start: 5;
+    justify-self: center;
+    align-self: center;
+    margin: 0 5px;
+
+}
+
+.file_size {
+    grid-column-start: 6;
+    justify-self: center;
+    align-self: center;
+    margin: 0 5px;
+}
+
+.file:hover {
+    color: rgb(232, 234,237);
+    transform: scale(1, 1.1);
+
+}
+
+
+.file_btn {
+    display: none;
+}
+
+.file:hover .file_date {
+    grid-column-start: 3;
+}
+
+.file:hover .file_size {
+    grid-column-start: 4;
+}
+
+.file:hover .file_download {
+    grid-column-start: 5;
+    display: block;
+
+}
+
+.file:hover .file_delete {
+    grid-column-start: 6;
+    display: block;
+
+}
+
+@media only screen and (max-device-width: 361px) {
+    .file_name {
+        max-width: 125px;
+    }
+
+    .file_size {
+    }
+
+}
+
+.file_plate {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.file_plate_img {
+    width: 100px;
+    height: 100px;
+}
+
+.file_plate_name {
+    margin-top: 5px;
+    color: rgb(154, 160, 166);
+}
+
+
+.file_plate:hover .file_plate_name {
+    color: rgb(232, 234,237);
+}
+
+.file_plate_btn {
+    margin-top: 5px;
+    display: none;
+}
+
+.file_plate_btn>button {
+    padding: 3px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.file_plate:hover .file_plate_btn {
+    display: flex;
+}
+
+
+.file_plate_download {
+
+}
+
+.file_plate_delete {
+
+}
+

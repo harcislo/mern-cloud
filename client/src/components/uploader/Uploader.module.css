@@ -1,0 +1,26 @@
+.uploader {
+    overflow: auto;
+    padding: 10px;
+    position: fixed;
+    background-color: #3d3f44;
+    bottom: 0;
+    right: 0;
+    border-radius: 3px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.title {
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.close {
+    padding: 3px 5px;
+    cursor: pointer;
+}

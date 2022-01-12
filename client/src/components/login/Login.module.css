@@ -1,0 +1,13 @@
+.wrapper {
+    color: rgb(154, 160, 166);
+    font-size: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.header {
+    margin-bottom: 15px;
+}

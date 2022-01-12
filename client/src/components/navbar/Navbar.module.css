@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #292A2E;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #24E9A6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    max-width: 65px;
+    margin: 0 15px;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 15px;
+}
+
+.login {
+    margin-right: 15px;
+}
+
+a {
+    color: rgb(232, 234,237);
+    text-decoration: none;
+}
+
+.registration:hover {
+    border-bottom: 2px solid rgb(232, 234,237);
+}
+
+.login:hover {
+    border-bottom: 2px solid rgb(232, 234,237);
+}
+
+.logout:hover {
+    border-bottom: 2px solid rgb(232, 234,237);
+}
+
+.navbarActive {
+    border-bottom: 2px solid rgb(232, 234,237);
+}
+
+.logout {
+    color: rgb(232, 234,237);
+    cursor: pointer;
+}
+
+.search {
+    border: 2px solid rgb(187, 191, 192);
+    margin: 0 10px 0 0;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.search:hover {
+    border: 2px solid rgb(232, 234,237);
+}
+
+.search:focus {
+    border: 2px solid rgb(232, 234,237);
+
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+}

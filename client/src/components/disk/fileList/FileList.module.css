@@ -1,0 +1,89 @@
+.fileList {
+    margin-top: 10px;
+    box-shadow: 0px 1px 5px 2px #000000;
+
+}
+
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    color: rgb(154, 160, 166);
+    font-size: 2rem;
+}
+
+.files {
+    margin-top: 10px;
+    max-height: 500px; /* высота нашего блока */
+    /*box-shadow: 0px 0px 5px 0px #24E9A6;*/
+    overflow-y: scroll; /* прокрутка по вертикали */
+}
+
+.files::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+}
+
+
+.files::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: inherit;
+    border-radius: 5px;
+}
+
+.files::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: linear-gradient(180deg, #02A2F7, #02A2F7);
+}
+
+.fileList_header {
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr 4fr repeat(4, 1fr);
+    color: rgb(154, 160, 166);
+    padding: 5px;
+    box-shadow: 0px 2px 0px 0px #000000;
+
+}
+
+.fileList_name {
+    grid-column-start: 2;
+    margin: 0 5px;
+}
+
+.fileList_date {
+    grid-column-start: 5;
+    justify-self: center;
+    margin: 0 5px;
+}
+
+.fileList_size {
+    grid-column-start: 6;
+    justify-self: center;
+    margin: 0 5px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .files {
+        max-height: 450px; /* высота нашего блока */
+        /*box-shadow: 0px 0px 5px 0px #24E9A6;*/
+        overflow-y: scroll; /* прокрутка по вертикали */
+    }
+}
+@media only screen and (max-device-width: 320px) {
+    .files {
+        max-height: 350px; /* высота нашего блока */
+        /*box-shadow: 0px 0px 5px 0px #24E9A6;*/
+        overflow-y: scroll; /* прокрутка по вертикали */
+    }
+}
+
+
+
+.filePlate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
